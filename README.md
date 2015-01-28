@@ -1,4 +1,4 @@
-# unicode-substring
+# unicode-substring [![Build Status](https://travis-ci.org/lautis/unicode-substring.svg?branch=master)](https://travis-ci.org/lautis/unicode-substring)
 
 Unicode-aware substring for JavaScript. Surrogate pairs are counted as one character.
 
