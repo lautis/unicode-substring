@@ -1,6 +1,6 @@
 # unicode-substring [![Build Status](https://travis-ci.org/lautis/unicode-substring.svg?branch=master)](https://travis-ci.org/lautis/unicode-substring)
 
-Unicode-aware substring for JavaScript. Surrogate pairs are counted as one character.
+Unicode-aware substring for JavaScript. Surrogate pairs are counted as a single character.
 
 ## What?
 
@@ -14,9 +14,8 @@ The purpose of this library is to treat surrogate pairs as one character when ex
 
 var unicodeSubstring = require('unicode-substring')
 // unicodeSubstring(string, start, end)
-unicodeSubstring("Hello World!", 0, 5)
-// => "Hello"
+unicodeSubstring("💥Emoji Rule💥", 0, 6)
+// => "💥Emoji"
 ```
 
 The `start` and `end` parameters behave similarly as [String.prototype.substring](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/substring).
-
