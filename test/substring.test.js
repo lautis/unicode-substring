@@ -1,5 +1,5 @@
-import assert from "assert";
-import substring from "../src/index";
+var assert = require("assert");
+var substring = require("../index");
 
 describe("unicode-substring", () => {
   var string = "Photo booth keytar Williamsburg twee selfies.";
