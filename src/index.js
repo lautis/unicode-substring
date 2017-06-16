@@ -36,7 +36,7 @@ function toNumber(value, fallback) {
   }
 }
 
-export default function (string, start, end) {
+module.exports = function (string, start, end) {
   var realStart = toNumber(start, 0);
   var realEnd = toNumber(end, string.length);
   if (realEnd == realStart) {
