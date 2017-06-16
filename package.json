@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/lautis/unicode-substring",
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "mocha": "^3.4.2"
   },
   "dependencies": {}
 }
