@@ -4,7 +4,7 @@
   "description": "Unicode-aware substring",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "nyc mocha"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/lautis/unicode-substring",
   "devDependencies": {
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.2"
   },
   "dependencies": {}
 }

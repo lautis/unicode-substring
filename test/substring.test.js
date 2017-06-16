@@ -39,4 +39,11 @@ describe("unicode-substring", () => {
     assert.equal(substring(unicodeString, 3, 8), "emoji");
     assert.equal(substring(unicodeString, 9, 22), "are awesome 💣");
   });
+
+  it("counts broken surrogate pairs as a single character", () => {
+    assert.equal(
+      substring(unicodeString[0] + "💣", 0, 2),
+      unicodeString[0] + "💣"
+    );
+  });
 });
